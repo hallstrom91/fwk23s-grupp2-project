@@ -9,11 +9,6 @@ function App() {
 
   const handleLogin = async () => {
     try {
-      //block from empty input
-      if (!email || !password) {
-        throw new Error("All fields are required to fill out.");
-      }
-
       const response = await fetch("http://localhost:3001/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -35,10 +30,6 @@ function App() {
 
   const handleRegister = async () => {
     try {
-      //block from empty input
-      if (!email || !password) {
-        throw new Error("All fields are required to fill out.");
-      }
       const response = await fetch("http://localhost:3001/auth/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -67,21 +58,12 @@ function App() {
     try {
       const token = localStorage.getItem("access_token");
       const response = await fetch("http://localhost:3002/data", {
-        method: "GET",
         headers: {
           Authorization: `Bearer ${token}`,
         },
-        credentials: "include",
       });
 
-      if (!response.ok) {
-        throw new Error(`Error: ${response.status} - ${response.statusText}`);
-      }
-
       const result = await response.json();
-      console.log(result);
-
-      // end
 
       if (!response.ok) {
         throw new Error(result.message || "Failed to fetch data from backend");

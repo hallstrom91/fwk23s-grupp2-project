@@ -25,7 +25,7 @@ const dbPath = path.join(__dirname, "../users.json");
 const users = JSON.parse(fs.readFileSync(dbPath, "utf8"));
 
 // Production Env
-/* const isProduction = process.env.NODE_ENV === "production"; */
+const isProduction = process.env.NODE_ENV === "production";
 
 /*
 ============================================
@@ -53,7 +53,7 @@ router.post("/login", async (req, res) => {
     // place JWT in httpOnly cookie and limit access to sharing it with SameSite
     res.cookie("token", token, {
       httpOnly: true,
-      /* secure: isProduction, */
+      secure: isProduction,
       sameSite: "strict",
     });
 

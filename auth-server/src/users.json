@@ -34,5 +34,17 @@
     "email": "ninja99",
     "password": "$2b$10$tZ7BSrKgM1VtJl7938p8UevZK.pTDxuELjxRJylkjviM5OsFP052.",
     "role": "user"
+  },
+  {
+    "id": 7,
+    "email": "ninja1",
+    "password": "$2b$10$4ONywzJ/dISsHlAW.1paRekRD11dePrSCE71UeobDG.dKUzzANkUG",
+    "role": "user"
+  },
+  {
+    "id": 8,
+    "email": "pelle",
+    "password": "$2b$10$KpDLuABuAnGBhdxC47CMF.Ux/EV9jgu94emFdYzce6j9bgyVNgxdq",
+    "role": "user"
   }
 ]
