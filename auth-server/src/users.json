@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "email": "ninja",
+    "password": "$2b$10$izk543qTSnd7Nt0ZLYYrm.bpeADgDOIut892qSiEmAqGLNEjSjL6q",
+    "role": "admin"
+  },
+  {
+    "id": 2,
+    "email": "ninja2",
+    "password": "$2b$10$pG1O8Gn.E5kiHtGba8GW3udlWTAzNeA8DwhuFIBbRvvrgyBGZ7356",
+    "role": "user"
+  },
+  {
+    "id": 3,
+    "email": "ninja44",
+    "password": "$2b$10$ZZSGzpdTdNAG5pS9k5s6zeKPQY3v1QE8iRatEF2n4EYW0FgyrYAoa",
+    "role": "user"
+  },
+  {
+    "id": 4,
+    "email": "ninja44",
+    "password": "$2b$10$lwX0JCF6Vg8AGdd0fyDZNuCrckHo2nVivx1mJvac5OK95w5Tx68wi",
+    "role": "user"
+  },
+  {
+    "id": 5,
+    "email": "ninja44",
+    "password": "$2b$10$u7b15W1HLwxLSbZrWx7uZeZFZxk1jO3lz.HbdijKuf0uhgkgh8xsW",
+    "role": "user"
+  },
+  {
+    "id": 6,
+    "email": "ninja99",
+    "password": "$2b$10$tZ7BSrKgM1VtJl7938p8UevZK.pTDxuELjxRJylkjviM5OsFP052.",
+    "role": "user"
+  }
+]
