@@ -6,9 +6,6 @@ Init Setup
 
 const express = require("express");
 const jwt = require("jsonwebtoken");
-const cookieParser = require("cookie-parser");
-const cors = require("cors");
-
 const router = express.Router();
 
 /*
