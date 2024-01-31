@@ -21,6 +21,8 @@ DB Path and DB variabel + Node Env
 // create variabel and path to usersDB
 const dbPath = path.join(__dirname, "../users.json");
 
+const secretKey = process.env.JWT_SECRET;
+
 // User DB
 const users = JSON.parse(fs.readFileSync(dbPath, "utf8"));
 
@@ -44,11 +46,9 @@ router.post("/login", async (req, res) => {
     const user = getUserByEmail(email, users);
 
     //create JWT token for user in httpOnly Cookie and SamSite protection
-    const token = jwt.sign(
-      { id: user.id, email, role: user.role },
-      "secretKey",
-      { expiresIn: "1h" }
-    );
+    const token = jwt.sign({ id: user.id, email, role: user.role }, secretKey, {
+      expiresIn: "1h",
+    });
 
     // place JWT in httpOnly cookie and limit access to sharing it with SameSite
     res.cookie("token", token, {
