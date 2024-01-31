@@ -49,13 +49,13 @@ app.use((req, res, next) => {
   next();
 });
 
-//MIME Sniffing, prevents harmful code from being executed.
+//MIME Sniffing, prevents harmful code from being executed. (helmet)
 app.use((req, res, next) => {
   res.setHeader("X-Content-Type-Options", "nosniff");
   next();
 });
 
-// Cross-site Scripting Protection.
+// Cross-site Scripting Protection. (helmet)
 app.use((req, res, next) => {
   res.setHeader(
     "Content-Security-Policy",
