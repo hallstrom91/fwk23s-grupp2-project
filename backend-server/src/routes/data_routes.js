@@ -10,7 +10,7 @@ const router = express.Router();
 
 /*
 ============================================
-Read JWT token from httpOnly Cookie w middleware
+Read and verify JWT and user role
 ============================================
 */
 

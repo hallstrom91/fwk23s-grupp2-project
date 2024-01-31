@@ -72,6 +72,7 @@ Check & Compare credentials in users.json DB
 ============================================
 */
 
+// Called in /login function
 const isValidUser = async (email, password, users) => {
   for (const user of users) {
     if (user.email === email) {
@@ -89,7 +90,7 @@ const isValidUser = async (email, password, users) => {
 Find user by email (Register route)
 ============================================
 */
-
+// called in /register function
 const getUserByEmail = (email, users) => {
   return users.find((user) => user.email === email);
 };
@@ -99,7 +100,7 @@ const getUserByEmail = (email, users) => {
 Bcrypt hashfunction 
 ============================================
 */
-
+// Hash password called in /register function
 const hashPassword = async (password) => {
   const saltRounds = 10;
   const hashedPassword = await bcrypt.hash(password, saltRounds);
