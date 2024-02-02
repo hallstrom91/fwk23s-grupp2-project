@@ -3,11 +3,11 @@
 ## Run Complete Project:
 
 ### `Auth and Backend Servers:`
-- You can find the Auth Server here - https://github.com/hallstrom91/fwk23s-grupp2-auth.git
+- You can find the Auth Server here:
 ```Auth
 https://github.com/hallstrom91/fwk23s-grupp2-auth.git
 ```
-- You can find the Backend Server here - <ADRESS>
+- You can find the Backend Server here:
 ```Backend
 LÄNK
 ```
