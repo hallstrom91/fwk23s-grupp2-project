@@ -21,7 +21,7 @@ So the Auth Server can assign JWT to user at login.
 ## TTFHW Backend Server - 5min
 
 ### `Backend Setup:`
-- Git clone <ADRESS>
+- Git clone https://github.com/Feridali/fwk23-grupp2-backend.git
 - Go to the root folder of the project and run "npm install" in the terminal to get all correct node_modules.
 - Create .env file in root folder of project, add a cryptokey to JWT_SECRET & PORT to .env config file.
 
@@ -36,7 +36,8 @@ PORT=3002
 
 #### `Run Complete Project:`
 - You will need to add both Auth and Frontend Servers to run the complete project.
-- Run Auth Server on PORT=3001
 - Run Frontend Server on PORT=3000
+- Run Auth Server on PORT=3001
+- Run Backend Server on PORT=3002
 - .ENV file in both Auth & Backend Server, both containing the same JWT_SECRET.
 

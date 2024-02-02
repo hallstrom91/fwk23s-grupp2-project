@@ -9,7 +9,7 @@ https://github.com/hallstrom91/fwk23s-grupp2-auth.git
 ```
 - You can find the Backend Server here:
 ```Backend
-LÄNK
+https://github.com/Feridali/fwk23-grupp2-backend.git
 ```
 
 ```NOTES
@@ -21,7 +21,7 @@ So the Auth Server can assign JWT to user at login and Backend Server can verify
 ## TTFHW Frontend Server - 5min
 
 ### `Frontend Setup:`
-- Git clone <ADRESS>
+- Git clone https://github.com/hallstrom91/fwk23s-grupp2-frontend.git
 - Go to the root folder of the project and run "npm install" in the terminal to get all correct node_modules.
 
 ### `How to start the Frontend Server:`
@@ -29,6 +29,7 @@ So the Auth Server can assign JWT to user at login and Backend Server can verify
 
 #### `Run Complete Project:`
 - You will need to add both Auth and Backend Servers to run the complete project.
+- Run Frontend Server on PORT=3000
 - Run Auth Server on PORT=3001
 - Run Backend Server on PORT=3002
 - .ENV file in both Auth & Backend Server, both containing the same JWT_SECRET.

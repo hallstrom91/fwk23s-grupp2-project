@@ -5,7 +5,7 @@
 ### `Backend and Frontend Servers:`
 - You can find the Backend Server here:
 ```Backend
-LÄNK
+https://github.com/Feridali/fwk23-grupp2-backend.git
 ```
 
 - You can find the Frontend Server here:
@@ -22,7 +22,7 @@ So the Backend Server can verify the users token and fetch secret data depending
 ## TTFHW Auth Server - 5min
 
 ### `Auth Setup:`
-- Git clone <ADRESS>
+- Git clone https://github.com/hallstrom91/fwk23s-grupp2-auth.git
 - Go to the root folder of the project and run "npm install" in the terminal to get all correct node_modules.
 - Create .env file in root folder of project, add a cryptokey to JWT_SECRET & PORT to .env config file.
 
@@ -42,7 +42,7 @@ PORT=3001
 
 #### `Run Complete Project:`
 - You will need to add both Backend and Frontend Servers to run the complete project.
-- Run Backend Server on PORT=3002
 - Run Frontend Server on PORT=3000
+- Run Auth Server on PORT=3001
+- Run Backend Server on PORT=3002
 - .ENV file in both Auth & Backend Server, both containing the same JWT_SECRET.
-
