@@ -15,7 +15,7 @@ LÄNK
 
 - You can find the Frontend Server here:
 ```Frontend
-LÄNK
+https://github.com/hallstrom91/fwk23s-grupp2-frontend.git
 ```
 
 ## TTFHW Complete Project - 10-15min

@@ -3,8 +3,15 @@
 ## Run Complete Project:
 
 ### `Backend and Frontend Servers:`
-- You can find the Backend Server here - <ADRESS>
-- You can find the Frontend Server here - <ADRESS>
+- You can find the Backend Server here:
+```Backend
+LÄNK
+```
+
+- You can find the Frontend Server here:
+```
+https://github.com/hallstrom91/fwk23s-grupp2-frontend.git
+```
 
 ```NOTES
 HOW TO RUN COMPLETE PROJECT:
