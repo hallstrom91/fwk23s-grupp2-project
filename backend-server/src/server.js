@@ -23,8 +23,8 @@ Middleware for site and user protection.
 app.use(cors());
 app.use(bodyParser.json());
 
-// Use helmet to protect from ??
-app.use(helmet()); // Continue code..
+// Use helmet basic functions
+app.use(helmet());
 
 //Rate Limiter for DDoS attack etc
 const rateLimit = rateLimiter({
@@ -33,36 +33,6 @@ const rateLimit = rateLimiter({
 });
 
 app.use(rateLimit);
-
-// Feature-Policy, limits use of microphone, kamera, geolocation from user. (helmet)
-app.use((req, res, next) => {
-  res.setHeader(
-    "Feature-Policy",
-    "geolocation 'self'; microphone 'none'; camera 'none'"
-  );
-  next();
-});
-
-// Prevents Clickjacking. (helmet)
-app.use((req, res, next) => {
-  res.setHeader("X-Frame-Options", "DENY");
-  next();
-});
-
-//MIME Sniffing, prevents harmful code from being executed. (helmet)
-app.use((req, res, next) => {
-  res.setHeader("X-Content-Type-Options", "nosniff");
-  next();
-});
-
-// Cross-site Scripting Protection. (helmet)
-app.use((req, res, next) => {
-  res.setHeader(
-    "Content-Security-Policy",
-    "default-src 'self'; script-src 'self'; style-src 'self'"
-  );
-  next();
-});
 
 //Use JWT auth API route in data_routes.js
 app.use("/data", dataRoutes);
