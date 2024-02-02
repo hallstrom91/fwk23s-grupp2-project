@@ -19,7 +19,7 @@ https://github.com/hallstrom91/fwk23s-grupp2-frontend.git
 ```
 
 ## TTFHW Complete Project - 10-15min
-- More detailed instructions in separate repos / root folders of all servers.
+- More detailed instructions inside specific repositories / root folders of all servers.
 
 ```NOTES
 HOW TO RUN COMPLETE PROJECT:

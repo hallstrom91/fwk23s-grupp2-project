@@ -18,6 +18,7 @@ Read and verify JWT and user role
 //JWT Secret for verification.
 const secretKey = process.env.JWT_SECRET;
 
+
 router.get("/", (req, res) => {
   const authHeader = req.headers["authorization"];
   const token = authHeader && authHeader.split(" ")[1];
@@ -27,9 +28,9 @@ router.get("/", (req, res) => {
   try {
     const verified = jwt.verify(token, secretKey);
     if (verified.role === "admin") {
-      /* return */ res.json({ data: "Secret data for admin!" });
+      return res.json('Secret data for admin!');
     } else {
-      /* return */ res.json({ data: "Secret data for user!" });
+      return res.json('Secret data for user!');
     }
   } catch {
     res.status(401).send("Invalid Token");
