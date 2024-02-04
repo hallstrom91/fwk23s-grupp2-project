@@ -1,5 +1,7 @@
 # FWK23S - Grupp 2 - Auth, Backend & Frontend Server.
 
+![project_structure](https://github.com/hallstrom91/fwk23s-grupp2-project/assets/143492796/b11f6c97-f617-4132-9dc0-1ef0f883ba8c)
+
 ## Run Complete Project:
 
 ### `Auth and Backend Servers:`
